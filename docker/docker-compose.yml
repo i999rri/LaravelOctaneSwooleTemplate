@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: ./app/develop
+      dockerfile: Dockerfile
+    ports:
+      - ${HOST_PORT}:${OCTANE_PORT}
+    volumes:
+       - ../src:/var/www
+    tty: true
