@@ -1,6 +1,6 @@
 FROM php:8.3-cli-alpine3.18
 
-COPY --from=composer:2.7.2 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.8.2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www
 
